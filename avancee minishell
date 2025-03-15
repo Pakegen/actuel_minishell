@@ -1,0 +1,19 @@
+Parties finies :
+- Dollar
+- Signal
+- Les builtins CD, UNSET, EXPORT, ENV, PWD et EXIT
+- History
+- Tokens
+
+Leaks a regler :
+- Pipe avec builtin
+
+Autres choses a regler :
+- Partie de la redirection qui n'est jamais appelee (parse input, parse prompt)
+- Redirection et execution pas bien fait (schema de "Check syntax" a "Execute command")
+- Quand heredoc attache pas gere, heredoc sans delimateur (pas de message d'erreur) cree seg fault regler segfault demain samedi 
+- Parsing dans les fonction de builtin (exec echo, exec pwd, etc ..)
+- Pipe a droite, redirection a gauche
+
+Le heredoc fonctionne
+
